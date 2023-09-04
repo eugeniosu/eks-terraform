@@ -39,7 +39,7 @@ module "eks" {
   eks_managed_node_groups = {
     first = {
       name          = "${local.cluster_name}-ng01"
-      desired_size  = 3
+      desired_size  = 2
       max_size      = var.node_groups_max_capacity
       min_size      = var.node_groups_min_capacity
 
