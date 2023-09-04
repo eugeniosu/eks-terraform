@@ -1,0 +1,11 @@
+cluster_name                 = "eks-cluster-dev"
+environment                  = "dev"
+vpc_name                     = "vpc-dev"
+vpc_region                   = "us-east-2"
+vpc_cidr                     = "10.216.0.0/16"
+vpc_private_subnets          = ["10.216.1.0/24", "10.216.2.0/24", "10.216.3.0/24"]
+vpc_public_subnets           = ["10.216.4.0/24", "10.216.5.0/24", "10.216.6.0/24"]
+node_groups_max_capacity     = 2
+node_groups_min_capacity     = 1
+node_groups_instance_types   = ["c5.xlarge"]
+kubernetes_version           = "1.26"

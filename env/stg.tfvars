@@ -1,0 +1,11 @@
+cluster_name                 = "eks-cluster-stg"
+environment                  = "stg"
+vpc_name                     = "vpc-stg"
+vpc_region                   = "[VALUE]"
+vpc_cidr                     = "[VALUE]"
+vpc_private_subnets          = ["[VALUE]"]
+vpc_public_subnets           = ["[VALUE]"]
+node_groups_max_capacity     = 2
+node_groups_min_capacity     = 1
+node_groups_instance_types   = ["[VALUE]"]
+kubernetes_version           = "1.26
